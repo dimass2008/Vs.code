@@ -1,210 +1,109 @@
-h1, h2, h3, p, li, span, a{
-    color: #ffffff;
-}
-h2{
-    font-weight: 700;
-    font-size: 40px;
-    text-transform: uppercase;
-}
-@font-face {
-    font-display: swap;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url(fonts/OpenSans_SemiCondensed-Regular.ttf);
-}
-@font-face {
-    font-display: swap;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url(fonts/OpenSans_SemiCondensed-Bold.ttf);
-}
-@font-face {
-    font-display: swap;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 800;
-    src: url(fonts/OpenSans_SemiCondensed-ExtraBold.ttf);
-}
-html *{
-    font-family: "Open Sans", sans-serif;
-}
-body{
-    background: linear-gradient(70deg, rgba(19, 6, 29, 0.966) 0%, rgba(48, 1, 13, 0.966) 100%);
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="styleindex.css">
+</head>
+<body>
+    <header class="style_header">
+        <div class="box-container">
+            <div class="menu">
+                <div class="circle">
+                    <p>Дмитрий</p>
+                    <img src="/HTML/media/1710578402354-1.webp">
+                </div>
+                <p>Portfolio</p>
+            </div>
+            <div class="box_link">
+                <a href="#">Обо мне</a>
+                <a href="#">Портфолио</a>
+                <a href="#">Награды</a>
+            </div>
+            <div class="style-button">
+                <!--<input tupe="button" value="Кнопка">-->
+                <button>Связь со мной</button>
+            </div>
+        </div>
+    </header>
+    <main class="style-main">
+        <section class="style-section">
+            <div class="style-info">
+                <h1>Приветствую!<img src="https://emojio.ru/images/apple-b/1f44b.png" alt="Привет"><br> Я <b>Дмитрий александров</b></h1>
+                <p>Являюсь веб-разработчиком и это мой первый сайт. Я обучаюсь в IT-Cube в г. Ковров</p>
+                <button>GitHub</button>
+                <p>Социальные сети:</p>
+                <img class="img-vk" src="/HTML/media/VK_Logo.webp" alt="VK">
+            </div>
+            <div class="container-box-style">
+                <div class="box-style box-style-1"></div>
+                <div class="box-style box-style-2">
+                    <img src="/HTML/media/Men.webp" alt="Мужчина">
+                </div>
+            </div>
+        </section>
+        <section class="style-section style-section-2">
+            <h2>моё портфолио</h2>
+            <div class="box-card">
+                <div class="container-image">
+                    <img src="/HTML/media/Steam.webp" alt="Карточка">
+                    <span>Steam</span>
+                </div>
+                <div class="container-image">
+                    <img src="/HTML/media/Steam.webp" alt="Карточка">
+                    <span>Steam</span>
+                </div>
+                <div class="container-image">
+                    <img src="/HTML/media/Steam.webp" alt="Карточка">
+                    <span>Steam</span>
+                </div>
+            </div>
+            <button>Смотреть ещё</button>
+        </section>
+        <div>
 
-.style_header{
-    width: 100%;
-    max-height: 80px;
-    height: 100%;
-    display: flex;
-    background: rgb(77, 74, 74);
-    justify-content: center;
-    border-bottom: 2px solid rgb(255,1,92);
-}
-
-.box-container{
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 2px;
-}
-.box_lin a:nth-child(2){
-    margin: 0 8vh;
-}
-.box_link > a{
-    font-size: 1rem;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-}
-.box_link > a:hover{
-    color:      rgb(248, 1, 1);
-}
-.menu{
-    display: flex;
-    align-items: center;
-}
-.circle{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: linear-gradient(90deg, rgba(224,8,125,1) 0%, rgba(172,23,0,1) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto 10px;
-
-}
-.circle p{
-    color: rgb(255, 255, 255);
-}
-
-.style_button{
-    max-width: 142px;
-    width: 100%;
-}
-.style_button button{
-    width: 100%;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 6px 4px;
-    border-radius: 10px;
-}
-.style-main{
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.style-info img{
-    max-width: 62px;
-    max-height: 62px;
-    width: 100%;
-    height: 100%;
-}
-.style-info h1{
-    font-size: 48px;
-}
-.style-info p{
-    font-size: 24px;
-    line-height: 36px;
-}
-.style-info button{
-    max-width: 140px;
-    width: 100%;
-    height: 45px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    border-radius: 10px;
-    background: linear-gradient(90deg, rgb(225, 4, 70) 0%, rgb(153, 6, 6) 100%);
-}
-.style-info b{
-    background: linear-gradient(90deg, rgba(255,0,138,1) 0%, rgba(182,22,22,1) 100%);;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.img-vk{
-    width: 32px !important;
-    height: 32px !important;
-}
-.style-section{
-    max-width: 1200px;
-    width: 100%;
-    margin: 10px auto;
-    display: flex;
-}
-.box-style{
-    width: 15px 0;
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-}
-.box-style.box-style-1{
-    background: rgba(224,8,125,1);
-    position: relative;
-    right: -7%;
-}
-.box-style.box-style-2{
-    background: rgba(182,22,22,1);
-    position: relative;
-    right: 25%;
-    display: flex;
-    align-items: flex-end;
-}
-.container-box-style{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.container-image{
-    max-width: 310px;
-    max-height: 270px;
-    width: 100%;
-    overflow: hidden;
-}
-.container-image img{
-    width: 100%;
-}
-/* .container-image span{
-
-} */
-.box-card{
-    margin: 15px 0px;
-}
-.box-card button{
-    max-width: 315px;
-    width: 100%;
-    height: 90PX;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ffffff;
-    border-radius: 10px;
-    background: linear-gradient(90deg, rgba(195,7,63,1) 0%, rgba(195,7,63,1) 100%);
-}
-
-.style-prices {
-    max-width: 315px;
-    width: 100%;
-    height: 90PX;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ffffff;
-    border-radius: 10px;
-    background:  #303030;
-}
-.style-prices h2{
-    background: linear-gradient(90deg, rgba(255,0,138,1) 0%, rgba(182,22,22,1) 100%);;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-}
+        </div>
+        <section class="style-section-service">
+            <h2>цены</h2>
+            <div class="container-service">
+                <div>
+                    <div>
+                        <h3>Разработка ботов</h3>
+                        <p>Индивидуальный подход</p>
+                    </div>
+                    <p>от <b>15000 ₽</b></p>
+                    <ul>
+                        <li>Качественно и быстро</li>
+                        <li>Качественно и быстро</li>
+                        <li>Качественно и быстро</li>
+                        <li>Качественно и быстро</li>
+                        <li>Качественно и быстро</li>
+                    </ul>
+                    <button>Получить консультацию</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="style-footer">
+        <div>
+            <div class="menu">
+                <div class="circle"><p>Дмитрий</p></div>
+                <p>Portfolio</p>
+            </div>
+            <p>Превращаю ваши идеи<br>в онлайн реальность</p>
+        </div>
+        <div class="style-footer-link">
+            <div class="box_link">
+                <a href="#">Обо мне</a>
+                <a href="#">Портфолио</a>
+                <a href="#">Награды</a>
+            </div>
+            <div>
+                <img src="/Site/media/GitHub.png" alt="GitHub">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
